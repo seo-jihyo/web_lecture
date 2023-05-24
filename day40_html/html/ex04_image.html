@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>tag - table, image,</title>
+</head>
+<body>
+    <h5>상대경로</h5>
+    <!-- image 띄우기 -->
+    <img src="house.gif" width="100" height="100" alt="우리집">
+    <!-- image에 파일 링크 걸기 -->
+    <a href="ex03_table.html">
+        <img src="house.gif" width="100" height="100" alt="우리집">
+    </a>
+    <!--image에 외부 링크 걸기 -->
+    <a href="http://www.naver.com" target="_blank">
+    <img src="house.gif" width="100" height="100" alt="우리집">
+    </a>
+    
+    <hr>
+    <h5>절대경로</h5>
+        <a href="http://www.google.com" target="_blank">
+        <img src="../images/puppy.png" width="100" height="100" alt="우리집강아지쿠키">
+        </a>
+    
+        <a href="http://www.google.com" target="_blank">
+            <img src="../images/cat.jpg" width="100" height="100" alt="우리고양이">
+        </a>
+    <hr>
+    <h5>표시</h5>
+    
+    <img src="../images/cat.jpg" alt="필수 작성" border="2" align="top" width="100" height="100">
+    <hr>
+    <h3>frame 속성의 예입니다.</h3>
+    <table frame = "hsides" border="3">
+        <tr><td>First row</td></tr>
+        <tr><td>First row</td></tr>
+    </table> 
+    <table frame = "vsides" border="3">
+        <tr><td>First row</td></tr>
+    </table>
+        <p>rule 속성은 Internet Explorer에서는 적용되지 않을 수 있습니다.</p>
+    <hr> 
+    <h3>rule 속성의 예입니다.</h3>
+    <p>Table with rules = "row" : </p>
+    <table rules = "rows">
+        <tr><th>Month</th><th>Savings</th></tr>
+        <tr><th>January</th><th>$100</th></tr>
+    </table>
+    <p>Table with rules = "all" : </p>
+    <table rules = "all">
+        <tr><th>Month</th><th>Savings</th></tr>
+        <tr><th>January</th><th>$100</th></tr>
+    </table>
+    <table>
+        <tr>
+            <th>Coumn 1 Heading</th>
+            <th>Coumn 2 Heading</th>
+        </tr>
+        <tr>
+            <td>Row 1 Col</td>
+            <td>Row2 Col2</td>
+        </tr>
+    </table>
+    <hr>
+</body>
+</html>
