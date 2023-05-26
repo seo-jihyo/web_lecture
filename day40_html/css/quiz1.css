@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+table, tr, td{
+    margin: auto;
+    width: 300;
+    height: 50px;
+    border: 1px solid;
+    background-color: aliceblue;
+}

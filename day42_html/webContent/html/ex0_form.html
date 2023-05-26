@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tag - form : get/post 전송 방식</title>
+</head>
+<body>
+	<h4>전송 방식: get / post</h4>
+	<!-- server 측 url이 action에 들어간다 (숨겨서).
+		 전송방식을 지정하지 않을 시 default가 get임 웹에서는 get/post
+		 host get push put delete 등 총 9가지 방법이 있음-->
+	
+	<!-- post 전송 방식: 글자수 제한 없음. 약한 보안
+	http://localhost:8080/day42_html/jsp/result.jsp
+	 -->
+	<h2>Post 전송 방식</h2>
+	<form action="../jsp/result.jsp" method="post"> 
+		이름: <input type="text" name="irum" id="name" placeholder="이름 입력"><br> <!-- js에서는 주로 id값으로 핸들링한다. -->
+		비번: <input type="password" name="pwd" id="pwd" placeholder="비번 입력"><br>
+		메일: <input type="email" name="mail" id="mail" required="required"
+		placeholder="ex@kosa.or.kr"><br><br>
+		
+		<input type="submit" value="전송">&nbsp;
+		<input type="reset" value="취소"><br>
+	</form>
+
+	
+	<!-- get 전송 방식: 글자수에 제한이 있다. (255자) 
+		 보안에 취약하다 (주소에 드러남)
+		 http://localhost:8080/day42_html/html/ex0_form.html?irum=%EC%84%9C%EC%A7%80%ED%9A%A8&pwd=1234&mail=ohyiif%40gmail.com
+					아이피:포트번호 key값?value값
+		
+	-->	 
+	<h2>Get 전송 방식</h2>
+	<form action="../jsp/result.jsp" method="get"> 
+		이름: <input type="text" name="irum" id="name" placeholder="이름 입력"><br> <!-- js에서는 주로 id값으로 핸들링한다. -->
+		비번: <input type="password" name="pwd" id="pwd" placeholder="비번 입력"><br>
+		메일: <input type="email" name="mail"><br><br>
+		
+		<input type="submit" value="전송">&nbsp;
+		<input type="reset" value="취소">
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+

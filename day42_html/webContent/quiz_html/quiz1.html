@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 정보 입력</title>
+<link href="../quiz_css/quiz1.css" rel = "stylesheet" type = "text/css">
+
+</head>
+   <form action="" method="get">
+        <h1 align="center">회원 정보 입력</h1>
+        <hr>
+        <table>
+            <tr>
+                <td><center>ID</center></td>
+                <td><input type="text" name="id" placeholder="ID 입력"></td>
+            </tr>
+            <tr>
+                <td><center>Password</center></td>
+                <td><input type="password" name="pwd" id="pwd" placeholder="Password 입력"></td>
+            </tr>
+            <tr>
+                <td><center>Password 확인</center></td>
+                <td><input type="password 확인" name="pwd" id="pwd" placeholder="Password 재입력"></td>
+            </tr>
+            <tr>
+                <td><center>이    름</center></td>
+                <td><input type="name" name="irum" id="name" placeholder="이름 입력"></td>
+            </tr>
+            <tr>
+                <td><center>전화번호</center></td>
+                <td>
+                    <input type="text" readonly="readonly" value="010" size="3">
+                    - <input type="text" maxlength="4" size="3"> - <input type="text" maxlength="4" size="3">
+                </td>
+            </tr>
+            <tr>
+                <td><center>직업 선택</center></td>
+                <td><select>
+                        <option>직업 선택</option>
+                        <option>관리자</option>
+                        <option>전문가</option>
+                        <option>사무 종사자</option>
+                        <option>서비스 종사자</option>
+                        <option>판매</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><center>성별</center></td>
+                <td>
+                    <input type="radio" id="m" value="남자">남
+                    <input type="radio" id="f" value="여자" checked="checked">여
+
+                </td>
+            </tr>
+            <tr>
+                <td><center>취미</center></td>
+                <td>
+                    <input type="checkbox" checked="d"> 독서
+                    <input type="checkbox"> 수영
+                    <input type="checkbox"> 게임
+                    <input type="checkbox"> 영화감상
+                    <input type="checkbox"> 음악듣기
+                </td>
+            </tr>
+            <tr>
+                <td><center>자기소개</center></td>
+                <td>
+                    <textarea rows="10" cols="55">자기소개를 해주세요</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="등록하기">&nbsp;
+                    <input type="reset" value="취소하기"><br>
+                </td> 
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

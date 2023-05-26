@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex11_standard.html</title>
+<!-- 우선순위 비교 
+<style type="text/css">
+	img{
+	border-color:black;
+	border: 1-px double;}
+	인라인에도 지정했기 때문에 우선순위가 높은 인라인 속성이 먼저 적용된다.
+	인라인에 지정하지 않았을 경우 style이 모든 속성에 지정됨
+</style> -->
+<style type="text/css">
+	* {
+		font-family: serif, fanasy, 궁서, 굴림;
+	}
+
+</style>
+<!-- file로 등록했을 경우 -->
+<link href="../css/my.css" rel="stylesheet" type = "text/css">
+</head>
+<body>
+<img alt="css test" src="../images/2.jpg">
+<img alt="test" src="../images/1.jpg" style = "border: 5px solid; border-color:pink">
+<hr>
+선택자를 div를 <div id = "multi"><em>여러 개</em></div>있을 경우
+선택자를 div를 <p><em>여러 개</em></p>있을 경우
+<nav class = "navi">
+	<ul>
+		<li><a href="#">애완견 종류</a></li>
+		<li><a href="#">입양하기</a></li>
+		<li><a href="#">건강 돌보기</a></li>
+		<li><a href="#">더불어 살기</a></li>
+	</ul>
+	<br><p><hr>
+	<ul>
+		<li><a href="#">애완견 종류</a></li>
+		<li><a href="#">입양하기</a></li>
+		<li><a href="#">건강 돌보기</a></li>
+		<li><a href="#">더불어 살기</a></li>
+	</ul>
+</nav>
+<ul><!-- nav 밖의 ul -->
+		<li><a href="#">애완견 종류</a></li>
+		<li><a href="#">입양하기</a></li>
+		<li><a href="#">건강 돌보기</a></li>
+		<li><a href="#">더불어 살기</a></li>
+	</ul>
+<hr>
+<p>
+이제 <span class="accent">웹표준</span>의 역할은 
+아주 <span class="accent">중요</span>합니다.
+</p>
+</body>
+</html>

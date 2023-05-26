@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	transition: 1s; 
+}
+.box:focus{
+	width: 300px;
+	background-color: royalblue;
+}
+input:focus {
+	background-color: pink;
+}
+
+.fruits span:first-child {
+	color:red;
+}
+.fruits h3:last-child { 	/* fruits 영역의 lastchild = 사과 */
+	color:green;
+}
+.fruits *:nth-child(3){
+	color: royalblue;
+}
+.fruits *:nth-child(2n+1){	/* n은 0부터 시작 2n은 짝수 2n+1, 2n-1은 홀수 */
+/* fruits요소의 모든 요소중에서  */
+	color: purple;
+}
+.fruits *:nth-child(n+2){	/* n은 0부터 시작 n+2는 짝수 */
+	color: aqua;
+}
+.fruits *:not(span){	/* */
+	color: red;
+}
+ .box::after{
+	content:"";
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: royalblue;
+} 
+/*
+.box::before{
+	content: "앞";
+}*/
