@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex09_jquery.html</title>
+<!--file 방식 링크-->
+<!-- <script type="text/javascript" src="파일 경로"></script> -->
+<!-- CDN 방식 -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+</head>
+<body>
+<header><h2>jQuery Sample</h2></header>
+
+<input id = "inputdemo" value = "">
+<input type = "button" value = "변환 1">
+<input type = "button" value = "변환 2">
+
+<div class = "welcome"></div>
+<div class = "welcome"></div>
+<div id = "demo">
+	<div class = "inner">Create jQuery Test </div>
+	
+</div> <hr/>
+<!-- 15px 이름 -->
+<div id = "name">이부분에 클릭이벤트 발생하면 이름 출력하기</div>
+<script type="text/javascript">
+
+$(function(){
+	
+
+	$('#name').on('click', function(){
+		$(this).css('font-size','30px').html('서지효');
+	});
+
+		
+
+//css('background', 'white').html('글자변경');
+/*
+	$('.welcome').html('hello world Daebo th2')
+				 .css('background-color', 'orange')
+				 .on('click', function(e){
+					// $(".welcom").hide();
+					// console.log(e);
+					let clicked = e.target;
+					console.log(clicked);
+					$(this).css('background-color', 'red')
+				 });
+*/	
+/*체이닝방식 2: 직접 넣기
+		$('.welcome').html('hello world Daebo th2')
+				 .css('background-color', 'orange')
+				 .click(function(){
+					$(this).css('background-color','yellow') 
+				 });
+*/	
+	
+/*체이닝방식 1: on 사용 여러개의 이벤트를 넣을 수 있는 장점이 있다.
+//		on(1,2); on('event', function(){});
+
+	$('.welcome').html('hello world Daebo th2')
+				 .css('background-color', 'orange')
+				 .on('click', function(){
+					$(this).css('background-color', 'aqua')
+				 });
+*/
+/*
+//document.getElementsByTagName('h2').style.color = 'red';
+$('h2').css({'color':'pink'});
+*/	
+/*여러개 한번에 넣기
+$('#demo .inner').css({'text-decoration':'underline',
+	'border-bottom':'5px solid red',
+	'transform':'rotate(45deg)',
+	'opacity': .3
+*/
+
+	
+	
+/*기울기
+$('#demo .inner').css('transform', 'rotate(45deg)')
+*/
+
+/*투명도 : px 단위 생략 가능
+$('#demo .inner').css('opacity', '0.5')
+
+*/	
+	
+/*
+	$('h2').css('color', 'aqua');
+*/
+
+/* #demo.inner 글자에 언더라인	
+	$('#demo .inner').css('text-decoration','underline')
+*/
+
+/*	아래쪽에 5px 두께 실선 red
+	$('#demo .inner').css('border-bottom', '5px solid red')
+*/
+
+/* $('선택자').on('이벤트 종류', 할일 )
+
+	$('#demo').on('mouseover', function(){
+		$('.inner').css('background', 'green');
+	});
+*/
+
+/*
+	$('#demo').on('mouseout', function(){
+//	$('.inner').css('background', 'white') //도 가능
+		$('.inner').css('background', 'white').html('글자변경');
+	});
+*/
+
+/* 여러 선택자에 이벤트 추가
+	 $('#demo, h2, div').mouseover(function(){
+		$(this).css('background', 'yellow').html('daebo th2');
+	}); 
+*/
+	
+});
+</script>
+</body>
+</html>

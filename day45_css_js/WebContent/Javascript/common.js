@@ -60,7 +60,7 @@ function is_birth( year, month, date ){
 		var date = parseInt( date, 10 );
 		
 		var date_obj = new Date( year, month-1, date );
-		
+							//month는 0부터 시작
 		var flag =  year == date_obj.getFullYear( ) 
 						&& month == (date_obj.getMonth( )+1) 
 							&& date == date_obj.getDate( );
