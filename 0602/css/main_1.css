@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+.all{
+    text-align:  center;
+}
+
+
+.card-body{
+    width: 80%;
+    margin: auto;
+   
+}
+
+p{
+   text-align: center;
+}
+
+hr {
+    width: 70%;
+}
