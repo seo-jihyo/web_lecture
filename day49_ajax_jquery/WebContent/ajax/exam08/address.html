@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>address.html</title>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9ee71985182bb3cf8757b5c562e9bb62"></script>
+
+</head>
+<body>
+<div>
+	<h1>kosa 오는길~</h1>
+	<h3>google map</h3>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.784605578763!2d126.99736127614294!3d37.58368942314388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca32a5331fab3%3A0x4fe12669f86c6c4a!2z7ZWc7ISx7JWE7Yq47ZmA!5e0!3m2!1sko!2skr!4v1686108267206!5m2!1sko!2skr" width="800" height="400" style=" border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade "></iframe>
+
+
+	<h3>kakao map</h3>
+	<div id="map" style="width:800px;height:400px; top: 50%; left: 50%; transform: translate(-50%, 5%);"></div>
+
+</div>
+	<script>
+		var container = document.getElementById('map'); //지도를 표시할 div
+		var options = {
+			center: new kakao.maps.LatLng(37.58375131645121, 126.99992640947461), //지도에 찍힐 좌표
+			level: 3 //지도의 확대 레벨
+		};
+		//지도를 표시할 div와 지도 옵션으로 지도를 생성한다.
+		var map = new kakao.maps.Map(container, options);
+	</script>
+</body>
+</html>
