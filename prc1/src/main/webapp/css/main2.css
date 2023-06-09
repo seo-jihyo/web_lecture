@@ -1,0 +1,57 @@
+body{
+background-color: #979595;
+    
+}
+
+
+ div  {
+     width: 1000px;
+     text-align: left;
+     margin: 0 auto;
+ }
+
+
+ .left,
+ .content {
+     float: left;
+     width: 1000px;
+     margin: 30;
+     
+ }
+
+
+ .left {
+     margin: auto;
+     width: 300px;
+     height: 600px;
+ }
+
+ .content {
+     border-inline-color: black;
+     width: 600px;
+     height: 600px;
+ }
+
+ .container {
+     width: 370px;
+     margin: 0 auto;
+ }
+
+
+ img {
+     width: 200px;
+     height: 200px;
+     
+ }
+
+li{
+    list-style-type: none;
+}
+#photo{
+    margin-top: 10px;
+    width: 600px;
+    height: 600px;
+}
+
+/*  ------------------*/
+

@@ -1,0 +1,87 @@
+ body {
+     text-align: center;
+     color: #FFF;
+     width: 900px;
+ }
+
+/*  div .wrapper {
+     width: 1000px;
+     text-align: left;
+     min-height: 80%;
+     margin: 0 auto;
+ } */
+ /*----*/
+ 
+ .left,
+ .content {
+     border: 1px solid #999;
+     margin: 5px;
+     padding: 10px;
+ }
+
+
+ .left,
+ .content {
+     float: left;
+     width: 1000px;
+     margin: 30;
+
+ }
+
+ .left {
+     background-color: burlywood;
+     width: 200px;
+     height: 600px;
+ }
+
+ .content {
+     background-color: aliceblue;
+     width: 600px;
+     height: 600px;
+ }
+
+
+ /*-------------*/
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.album {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.images {
+    position: relative;
+    display: flex;
+    height: 250px;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+}
+
+button,
+button:active,
+button:focus {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(122, 122, 122);
+    outline: none;
+    border: none;
+}
+
+button:disabled {
+    background-color: gainsboro;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
